@@ -1,0 +1,233 @@
+
+@import "./all";
+
+.service2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    padding-top: 0px;
+    position: relative;
+    top: -70px;
+
+    .container-sec2 {
+        width: 80%;
+        align-items: flex-start;
+        padding-left: 50px;
+        margin-left: 20px;
+
+        @include mobile-sm {
+            width: 100%;
+            align-items: flex-start;
+        }
+
+        @include media-lg {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.img-cont {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: visible; // Ensure overflow is visible
+    margin-bottom: auto;
+
+    img {
+        transform: rotate(15deg);
+        margin-left: -300px;
+    }
+
+    #i1 {
+        z-index: -1;
+    }
+
+    #i2 {
+        z-index: 1;
+        height: 170px;
+        width: 400px;
+        margin-top:240px;
+        transform: rotate(0deg);
+        margin-left:-380px;
+    }
+}
+
+.sec-intro2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-top: 80px;
+    align-items: flex-start;
+
+    @include mobile-sm {
+        align-items: left;
+    }
+
+    @include media-lg {
+        align-items: left;
+    }
+
+    span {
+        color: red;
+    }
+
+    h1 {
+        color: #000000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        @include mobile-md {
+            text-align: left;
+            font-size: 3rem;
+        }
+    }
+
+    .fts {
+        padding-top: 40px;
+    }
+
+
+    .ft-title-container {
+        display: flex;
+
+        .ft-image {
+            display: flex;
+        }
+
+        .ft-heading {
+            display: flex
+        }
+    }
+
+    .ft-desc1 {
+        color: gray;
+        padding-top: 10px;
+        padding-left: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-right:350px;
+    }
+
+    .f2, .f3 {
+        padding-top: 40px;
+    }
+}
+
+
+.service1 {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    margin-top:-200px;
+    
+
+    .container-sec1 {
+        width: 80%;
+        align-items: flex-start;
+        padding-left: 50px;
+        margin-left: 20px;
+
+        @include mobile-sm {
+            width: 100%;
+            align-items: flex-start;
+        }
+
+        @include media-lg {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.img-cont1 {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: visible; // Ensure overflow is visible
+    margin-bottom: auto;
+    padding-right:500px;
+    img {
+        transform: rotate(15deg);
+    }
+
+    #i3 {
+        z-index: -1;
+    }
+
+    #i4 {
+        z-index: 1;
+        height: 170px;
+        width: 300px;
+        margin-top: 180px;
+        transform: rotate(0deg);
+        margin-left: -430px;
+    }
+}
+
+.sec-intro1 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 1rem;
+    padding-top: 80px;
+    align-items: flex-start;
+    margin-left:-80px;
+    @include mobile-sm {
+        align-items: flex-start;
+    }
+
+    @include media-lg {
+        align-items:flex-start;
+    }
+
+    span {
+        color: red;
+    }
+
+    h1 {
+        color: #000000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        @include mobile-md {
+            text-align: left;
+            font-size: 3rem;
+        }
+    }
+
+    .fts1 {
+        padding-top: 40px;
+    }
+
+
+    .ft-title-container1 {
+        display: flex;
+
+        .ft-image {
+            display: flex;
+        }
+
+        .ft-heading1 {
+            display: flex
+        }
+    }
+
+    .ft-desc2 {
+        color: gray;
+        padding-top: 10px;
+        padding-left: 1px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding-right:150px;
+    }
+
+    .f2, .f3 {
+        padding-top: 40px;
+    }
+  
+}
+

@@ -1,0 +1,111 @@
+.testimonials section   {
+    padding-top:2px;
+    
+}
+
+h1 {
+    text-align: center;
+    align-content: center;
+    font-size: 50px;
+}
+
+h5 {
+    text-align: center;
+    align-content: center;
+   
+}
+
+.service4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-top:50px;
+    .container-sec4 {
+        width: 80%;
+        align-items: center;
+        padding-left: 50px;
+        margin-left: 20px;
+
+        @include mobile-sm {
+            width: 100%;
+            align-items: center;
+        }
+
+        @include media-lg {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+.img-cont {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    overflow: visible; // Ensure overflow is visible
+    margin-bottom: auto;
+    margin-left: -200px;
+    margin-top:8px;
+    .c {
+       transform: rotate(1deg);
+        height: 500px;
+        width: 500px;
+    }
+}
+
+.sec-intro4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 40px;
+    align-items: center;
+    margin-left: 150px;
+
+
+    span {
+        color: red;
+    }
+
+    h1 {
+        color: #000000;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+
+
+
+    .ft-title-container4 {
+        display: flex;
+
+        .ft-image {
+            display: flex;
+        }
+
+        .ft-heading4 {
+            display: flex
+        }
+    }
+
+    .ft-desc4 {
+        color: gray;
+        padding-top: 10px;
+        padding-left: 0px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+    }
+
+    .f2, .f3 {
+        padding-top: 40px;
+    }
+
+    .pics {
+        text-align: left;
+        display: inline-block;
+        margin-left: -350px;
+        padding-top: 20px;
+    }
+}

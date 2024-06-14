@@ -1,0 +1,123 @@
+header {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    // margin-bottom: 2rem;
+    position: relative;
+    z-index: 100;
+}
+.frame{
+    width:100px;
+    height:30 px;
+}
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    // background-color: sandybrown;
+    align-items: center;
+    padding: 1rem 0;
+    position: relative;
+    // navbar css
+
+    .navbar {
+        width: 40%;
+
+        @include mobile-sm {
+            width: 100%;
+            position: absolute;
+            height: 60vh;
+            top: 4.5rem;
+            left: 150%;
+            border-radius: 7px;
+            background-color: $White;
+        }
+
+        @include mobile-md {
+            width: 40%;
+            height: 0;
+            position: static;
+        }
+
+        &.active {
+            left: 0;
+        }
+
+        .nav-items {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            @include mobile-sm {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                // background-color: $White;
+                width: 100%;
+                height: 100%;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            @include mobile-md {
+                flex-direction: row;
+            }
+
+            @include media-lg {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-between;
+                // background-color: gray;
+            }
+
+            li {
+                display: inline;
+
+                a {
+                    color: #000000;
+                    font-family: Clash Display;
+                }
+
+                &.selected a {
+                    color: red; // Change color to red for the selected item
+                }
+            }
+        }
+    }
+    // Buttons css
+    .nav-btn {
+        padding: 0.6rem 1rem;
+        border-radius: 10%;
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+        background-color: black;
+
+        border: solid white;
+        border-width: 0 10px;
+    
+       
+        
+
+        &.nav-btn:hover {
+            opacity: 0.8;
+        }
+
+        @include mobile-sm {
+            display: none;
+        }
+
+        @include mobile-md {
+            display: block;
+        }
+    }
+}
+
+.nav-item {
+    transition: width 3s ease-in-out;
+    
+}
+

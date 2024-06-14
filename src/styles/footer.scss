@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    width: 100%;
+    height: 100%
+}
+
+.contacts {
+    padding-left: 100px;
+    padding-top: 100px;
+    border-spacing: 30px;
+}
+
+.input-box{
+    border:solid;
+}
+
+.input {
+    height: 50px;
+    border: none;
+    background-color: #FAF9F6;
+}
+
+.email {
+    padding-top: 270px;
+    
+}
+
+.nav-btn {
+    border-radius: 10%;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background-color: black;
+    border: solid white;
+    border-width: 0 10px;
+    height: 50px;
+    width:150px;
+}
+

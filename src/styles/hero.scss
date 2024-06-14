@@ -1,0 +1,344 @@
+ @import "./all";
+
+.intro {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: visible; // to ensure overflow is visible
+    position: relative; // Making intro relative for absolute positioning
+
+
+
+
+
+    .contain {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+
+
+        .intro-text {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 4rem; //or padding-top
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 100px;
+                left: 200px;
+                width: 20%;
+                height: 40%;
+                background: radial-gradient(circle at 245px 253.5px, #FDE598 0%, #FDE598 60%, #FF5555 50%, #FF5555 50%);
+                filter: blur(50px);
+                z-index: -1;
+            }
+
+            h1 {
+                padding: 1.5rem 0;
+                font-size: 4rem;
+                color: #000;
+                font-weight: bold;
+
+                @include mobile-sm {
+                    font-size: 2.5rem;
+                }
+
+                @include media-lg {
+                    font-size: 4rem;
+                }
+            }
+
+            p {
+                padding-bottom: 1.5rem;
+                color: gray;
+                font-size: 1.2rem;
+
+                @include mobile-sm {
+                    font-size: 1rem;
+                }
+
+                @include media-lg {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .button-container {
+                display: flex;
+                align-items: center;
+
+                .GetStarted {
+                    color: white;
+                    padding: 0.7rem 1.5rem;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    font-size: 1.2rem;
+                    background-color: black;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 1rem;
+
+                    span {
+                        margin-left: 0.5rem;
+                        font-size: 1.5rem;
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+
+                .WatchVideo {
+                    display: flex;
+                    align-items: center;
+                    background: none;
+                    border: none;
+                    color: black;
+                    font-size: 1.2rem;
+                    font-weight: 500;
+
+                    img {
+                        margin-right: 0.5rem;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+        .img-container {
+            width: 60%;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            overflow: visible; // to ensure overflow is visible
+            margin-bottom: auto;
+
+
+
+            img {
+                width: 33%;
+                position: absolute;
+                transition: transform 0.3s;
+
+                
+
+                &:nth-child(1) {
+                    z-index: 3;
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-115%) translateY(1px) rotate(-2deg);
+                }
+
+                &:nth-child(2) {
+                    z-index: 2;
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-96%) translateY(25px) rotate(-2deg);
+                }
+
+                &:nth-child(3) {
+                    z-index: 1;
+                    left: 50%;
+                    top: 0;
+                    transform: translateX(-73%) translateY(64px) rotate(-2deg);
+                }
+
+                @include media-lg {
+                    width: 60%;
+                    position: absolute;
+                    margin-left: 250px;
+
+                    &:nth-child(1) {
+                        z-index: 3;
+                        left: 50%;
+                        top: 0;
+                        transform: translateX(-115%) translateY(1px) rotate(-2deg);
+                    }
+
+                    &:nth-child(2) {
+                        z-index: 2;
+                        left: 50%;
+                        top: 0;
+                        transform: translateX(-96%) translateY(25px) rotate(-2deg);
+                    }
+
+                    &:nth-child(3) {
+                        z-index: 1;
+                        left: 50%;
+                        top: 0;
+                        transform: translateX(-73%) translateY(64px) rotate(-2deg);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    .svg-container {
+        position: absolute;
+        width: 569px;
+        height: 357.74px;
+        left: 0px;
+        top: 400px;
+        padding-top: 20rem;
+    }
+
+
+
+
+
+    .rectangle {
+        position: absolute;
+        padding: 10px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .red-horizontal {
+        background-color: #FF5640;
+        width: 300px;
+        height: 71px;
+        bottom: 0;
+        left: 309px;
+        z-index: 1;
+        top: 237px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .red-middle {
+        background-color: #FF5640;
+        width: 350px;
+        height: 71px;
+        top: 125px;
+        left: 250px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        transform: translateX(0%) translateY(10px) rotate(-40deg);
+        color: black;
+        font-weight: bold;
+    }
+
+    .black-top {
+        background-color: black;
+        width: 543px;
+        height: 71px;
+        top: 100px;
+        left: 50px;
+        z-index: 3;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        font-size: 12px;
+        transform: translateX(0%) translateY(10px) rotate(-20deg);
+    }
+
+    .letter-a {
+        position: absolute;
+        top: 76px;
+        left: 11.5px;
+        font-size: 98px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: black;
+        z-index: 0;
+        transform: translateX(20%) translateY(110px) rotate(-20deg);
+    }
+
+    .text-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .slash {
+        font-size: 50px;
+    }
+
+    .lines {
+        display: flex;
+        align-items: center;
+    }
+
+    .line {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        margin: 0 5px;
+    }
+
+    .star {
+        font-size: 16px;
+        color: white;
+    }
+
+    .utifry {
+        margin-left: 10px;
+    }
+
+    .utifry div {
+        font-size: 14px;
+    }
+
+    .utifry div:last-child {
+        font-size: 12px;
+    }
+
+    .vertline {
+        font-size: 70px;
+        color: black;
+        height: 90px;
+    }
+
+    .icon {
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+        transform: rotate(28deg)
+    }
+
+
+
+
+    .left1, .right1 {
+        display: flex;
+    }
+
+    .achievement-title {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+
+    .finance-title {
+        margin-right: 20px;
+    }
+
+    .left, .right {
+        display: flex;
+        flex-direction: column; /* Stack children vertically */
+        align-items: flex-start; /* Align children to the start */
+        justify-content: center; /* Center children vertically */
+    }
+
+    .achievement-title, .finance-title {
+        font-weight: bold;
+    }
+
+    .achievement-subtitle, .finance-subtitle {
+        margin-top: 5px; /* Add some spacing between title and subtitle */
+    }
+}

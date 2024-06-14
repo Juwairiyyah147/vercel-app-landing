@@ -1,0 +1,16 @@
+@import "all";
+@import "navbar";
+@import "hero";
+@import "features";
+@import "footer";
+@import "Advantages";
+@import "testimonials";
+@import "FAQ";
+@import "Footer";
+
+.App {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
