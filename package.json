@@ -1,5 +1,5 @@
 {
-  "name": "app-landing-page",
+  "name": "vercel-app-landing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
